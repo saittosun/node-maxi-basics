@@ -13,10 +13,19 @@ const server = http.createServer((req, res) => {
     return res.end();
   }
   if (url === '/message' && method === 'POST') {
-    fs.writeFileSync('message.txt', 'DUMMY');
+    const body = [];
+    req.on('data', (chunk) => {// the data event will be fired whenever a new chunk is ready to be read
+      console.log(chunk);
+      body.push(chunk);
+    });
+    req.on('end', () => {
+      const parseBody = Buffer.concat(body).toString();
+      const message = parseBody.split('=')[1];
+      fs.writeFileSync('message.txt', message);
+    });
     res.statusCode = 302;
     res.setHeader('Location', '/');
-    return res.end();// burada ve yukarida return yazmak isek kod okuma durmaz asagiya dogru devam eder ve asagida write yazdigimiz icin hata verir
+    return res.end();
   }
   res.setHeader('Content-type', 'text/html');
   res.write('<html>');
