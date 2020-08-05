@@ -1,0 +1,68 @@
+=> Two different ways of executing your node code. Repl stands for read, reading user input, e: evaluate user input, print: outputting a result and l: loop for returning and waiting for new input.
+
+=> Running node.js code: execute files			use the repl
+			-used for real apps		- great playground
+			-predictable sequence of steps	- execute code as you write it
+
+=> javascript summary:
+	weakly typed language				object-oriented-language			versatile language
+	-no explicit type assignment			-data can be organized in logical objects	- runs in browser & directly on a pc/server
+	-data types can be switched dynamically		-primitive and reference types			- can perform a broad variety of tasks
+
+=> Template Literals
+One other feature, we'll use from time to time are template literals: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Template_literals
+
+It's a different way of writing strings.
+
+Instead of using double or single quotation marks:
+
+'A String' or
+
+"Another string"
+
+you can use backticks (`)
+
+`Another way of writing strings`
+
+Now why would we use that way of creating strings?
+
+With that syntax, you can dynamically add data into a string like this:
+
+const name = "Max";
+const age = 29;
+console.log(`My name is ${name} and I am ${age} years old.`);
+This is of course shorter and easier to read than the "old" way of concatenating strings:
+
+const name = "Max";
+const age = 29;
+console.log("My name is " + name + " and I am " + age + " years old."
+
+NODE_BASICS
+
+=> Request & Response Headers
+On both requests and responses, Http headers are added to transport metadata from A to B.
+
+The following article provides a great overview of available headers and their role: https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers
+
+Whilst this article is a great resource, especially to dive deeper, please don't learn this list by heart though! You'll encounter many of these headers throughout the course and I'll explain them when we need them.
+
+=> 35.video yu anladim onemli tekrar bakmak lazim
+
+=> a thread is basically like a process in your operating system.
+
+=> 37.video da cok karisik birkac kez izlenmeli
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
