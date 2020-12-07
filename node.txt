@@ -46,11 +46,11 @@ The following article provides a great overview of available headers and their r
 
 Whilst this article is a great resource, especially to dive deeper, please don't learn this list by heart though! You'll encounter many of these headers throughout the course and I'll explain them when we need them.
 
-=> 35.video yu anladim onemli tekrar bakmak lazim
-
 => a thread is basically like a process in your operating system.
 
-=> 37.video da cok karisik birkac kez izlenmeli
+=> 34, 35, 36 ve 37.videolar cok karisik ve onemli birkac kez izlenmeli
+
+=> bolum sonu ozet videosu izlenmeli
 
 
 

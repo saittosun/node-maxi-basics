@@ -13,7 +13,7 @@ const requestHandler = (req, res) => {
   }
   if (url === '/message' && method === 'POST') {
     const body = [];
-    req.on('data', chunk => {// the data event will be fired whenever a new chunk is ready to be read
+    req.on('data', chunk => {// the data event will be fired whenever a new chunk is ready to be read also on allows us to listen to create events and the event
       console.log(chunk);
       body.push(chunk);
     });
@@ -30,7 +30,7 @@ const requestHandler = (req, res) => {
   res.setHeader('Content-type', 'text/html');
   res.write('<html>');
   res.write('<head><title>my first page</title></head>');
-  res.write('<body><h1>hello!!</h1></body>');
+  res.write('<body><h1>hello sait!</h1></body>');
   res.write('</html>');
   res.end();
 };
