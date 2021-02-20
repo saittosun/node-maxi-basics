@@ -52,6 +52,9 @@ Whilst this article is a great resource, especially to dive deeper, please don't
 
 => bolum sonu ozet videosu izlenmeli
 
+=> express bolumu
+middleware means that an incoming request is automatically funneled through a bunch of functions by expressjs, so instead of just having one request handler, you will actually have a possibility of hooking in multiple functions which the request will go through until you send a response. This allows you to split your code into multiple blocks or pieces instead of having one huge function that does everything and this is the pluggable nature of expressjs, where you can easily add other third party packages which simply happen to give you such middleware functions that you can plug into expressjs and add certain functionalities.
+
 
 
 
