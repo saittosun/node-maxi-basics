@@ -11,6 +11,7 @@ const requestHandler = (req, res) => {
     res.write('</html>');
     return res.end();
   }
+
   if (url === '/message' && method === 'POST') {
     const body = [];
     req.on('data', chunk => {// the data event will be fired whenever a new chunk is ready to be read also on allows us to listen to create events and the event
