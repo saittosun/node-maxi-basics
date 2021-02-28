@@ -3,10 +3,13 @@ const path = require('path');
 
 const router = express.Router();
 
+const adminData = require('./admin')
 const rootDir = require('../util/path');
 
 router.get('/', (req, res, next) => {
-  res.sendFile(path.join(rootDir, 'views', 'shop.html')) //dirname is a global variable which simply holds the absolute path on our operating system  to this project folder
+  const products = adminData.products;
+  // res.sendFile(path.join(rootDir, 'views', 'shop.html'))
+  res.render('shop', { prods: products, pageTitle: 'Shop', path: "/" })
 })
 
 module.exports = router;
